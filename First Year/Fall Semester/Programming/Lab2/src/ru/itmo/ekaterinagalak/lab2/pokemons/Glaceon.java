@@ -1,6 +1,7 @@
 package ru.itmo.ekaterinagalak.lab2.pokemons;
 
 import ru.ifmo.se.pokemon.Type;
+
 import ru.itmo.ekaterinagalak.lab2.moves.special.FrostBreath;
 
 public class Glaceon extends Eevee {

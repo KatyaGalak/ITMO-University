@@ -1,9 +1,6 @@
 package ru.itmo.ekaterinagalak.lab2.moves.status;
 
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 /*
  * Tail Whip lowers the target's Defense by one stage.

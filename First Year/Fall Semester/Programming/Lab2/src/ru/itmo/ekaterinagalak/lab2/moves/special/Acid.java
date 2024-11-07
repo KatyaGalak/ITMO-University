@@ -1,10 +1,6 @@
 package ru.itmo.ekaterinagalak.lab2.moves.special;
 
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 /*
  * Acid deals damage and has 

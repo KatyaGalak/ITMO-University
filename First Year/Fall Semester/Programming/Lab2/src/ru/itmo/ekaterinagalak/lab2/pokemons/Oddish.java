@@ -1,7 +1,7 @@
 package ru.itmo.ekaterinagalak.lab2.pokemons;
 
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
+
 import ru.itmo.ekaterinagalak.lab2.moves.physical.Facade;
 import ru.itmo.ekaterinagalak.lab2.moves.status.Swagger;
 

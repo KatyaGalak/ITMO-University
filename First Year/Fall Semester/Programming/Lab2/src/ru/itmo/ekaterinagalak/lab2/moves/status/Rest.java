@@ -1,10 +1,6 @@
 package ru.itmo.ekaterinagalak.lab2.moves.status;
 
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.Pokemon;
-//import ru.ifmo.se.pokemon.Status;
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 /*
  * User sleeps for 2 turns, but user is fully healed.

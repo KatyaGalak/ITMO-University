@@ -1,9 +1,6 @@
 package ru.itmo.ekaterinagalak.lab2.moves.physical;
 
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.PhysicalMove;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 public class Headbutt extends PhysicalMove {
     private static final double POWER_HEADBUTT = 70;

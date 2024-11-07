@@ -1,8 +1,6 @@
 package ru.itmo.ekaterinagalak.lab2.moves.special;
 
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 /*
  * Frost Breath deals damage and always results in a critical hit.

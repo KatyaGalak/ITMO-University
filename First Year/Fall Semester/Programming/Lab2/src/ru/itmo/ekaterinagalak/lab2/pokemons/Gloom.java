@@ -1,5 +1,7 @@
 package ru.itmo.ekaterinagalak.lab2.pokemons;
 
+import ru.ifmo.se.pokemon.Type;
+
 import ru.itmo.ekaterinagalak.lab2.moves.special.Acid;
 
 public class Gloom extends Oddish {
@@ -12,6 +14,8 @@ public class Gloom extends Oddish {
 
     public Gloom(String name, int level) {
         super(name, level);
+
+        setType(Type.ICE);
 
         setStats(BASE_STATS_HP, BASE_STATS_ATTACK, BASE_STATS_DEFENSE, 
                  BASE_STATS_SPECIAL_ATTACK, BASE_STATS_SPECIAL_DEFENSE, BASE_STATS_SPEED);
