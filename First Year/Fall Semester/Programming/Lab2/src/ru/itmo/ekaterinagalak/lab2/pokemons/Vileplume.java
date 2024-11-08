@@ -16,6 +16,6 @@ public final class Vileplume extends Gloom {
         setStats(BASE_STATS_HP, BASE_STATS_ATTACK, BASE_STATS_DEFENSE, 
                  BASE_STATS_SPECIAL_ATTACK, BASE_STATS_SPECIAL_DEFENSE, BASE_STATS_SPEED);
         
-        setMove(new Rest());
+        addMove(new Rest());
     }
 }
