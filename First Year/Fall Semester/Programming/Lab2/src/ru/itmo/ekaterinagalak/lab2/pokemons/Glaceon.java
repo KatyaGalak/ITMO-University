@@ -4,7 +4,7 @@ import ru.ifmo.se.pokemon.Type;
 
 import ru.itmo.ekaterinagalak.lab2.moves.special.FrostBreath;
 
-public class Glaceon extends Eevee {
+public final class Glaceon extends Eevee {
     private static final double BASE_STATS_HP = 65;
     private static final double BASE_STATS_ATTACK = 60;
     private static final double BASE_STATS_DEFENSE = 110;

@@ -7,7 +7,7 @@ import ru.itmo.ekaterinagalak.lab2.moves.physical.Bulldoze;
 import ru.itmo.ekaterinagalak.lab2.moves.physical.Headbutt;
 import ru.itmo.ekaterinagalak.lab2.moves.physical.RazorLeaf;
 
-public class Tropius extends Pokemon {
+public final class Tropius extends Pokemon {
     private static final double BASE_STATS_HP = 99;
     private static final double BASE_STATS_ATTACK = 68;
     private static final double BASE_STATS_DEFENSE = 83;

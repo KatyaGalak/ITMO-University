@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Tail Whip lowers the target's Defense by one stage.
  */
 
-public class TailWhip extends StatusMove {
+public final class TailWhip extends StatusMove {
     private static final double POWER_TAIL_WHIP = 0;
     private static final double ACCURACY_TAIL_WHIP = 100;
 

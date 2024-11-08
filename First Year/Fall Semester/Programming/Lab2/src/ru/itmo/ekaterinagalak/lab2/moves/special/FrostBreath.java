@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Frost Breath deals damage and always results in a critical hit.
  */
 
-public class FrostBreath extends SpecialMove {
+public final class FrostBreath extends SpecialMove {
     private static final double POWER_FROST_BREATH = 60;
     private static final double ACCURACY_FROST_BREATH = 90;
 

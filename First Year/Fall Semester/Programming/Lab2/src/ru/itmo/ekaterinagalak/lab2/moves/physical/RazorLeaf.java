@@ -7,7 +7,7 @@ import ru.ifmo.se.pokemon.*;
  * an increased critical hit ratio (1⁄8 instead of 1⁄24).
  */
 
-public class RazorLeaf extends PhysicalMove {
+public final class RazorLeaf extends PhysicalMove {
     private static final double POWER_RAZOR_LEAF = 55;
     private static final double ACCURACY_RAZOR_LEAF = 95;
 

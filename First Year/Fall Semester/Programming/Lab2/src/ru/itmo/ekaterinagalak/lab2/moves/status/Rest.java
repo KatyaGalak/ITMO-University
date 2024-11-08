@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * User sleeps for 2 turns, but user is fully healed.
  */
 
-public class Rest extends StatusMove {
+public final class Rest extends StatusMove {
     private static final double POWER_REST = 0;
     private static final double ACCURACY_REST = 100;
 

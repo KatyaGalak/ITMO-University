@@ -7,7 +7,7 @@ import ru.ifmo.se.pokemon.*;
  * a 10% chance of lowering the target's Special Defense by one stage.
  */
 
-public class Acid extends SpecialMove {
+public final class Acid extends SpecialMove {
     private static final double POWER_ACID = 40;
     private static final double ACCURACY_ACID = 100;
 

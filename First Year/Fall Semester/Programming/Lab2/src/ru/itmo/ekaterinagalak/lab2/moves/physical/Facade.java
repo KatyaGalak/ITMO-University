@@ -9,7 +9,7 @@ import ru.ifmo.se.pokemon.*;
  * still occurs so Facade hits with an effective power of 70.
  */
 
-public class Facade extends PhysicalMove {
+public final class Facade extends PhysicalMove {
     private static final double POWER_FACADE = 70;
     private static final double ACCURACY_FACADE = 100;
 

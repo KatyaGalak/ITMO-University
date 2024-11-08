@@ -2,7 +2,7 @@ package ru.itmo.ekaterinagalak.lab2.moves.physical;
 
 import ru.ifmo.se.pokemon.*;
 
-public class Headbutt extends PhysicalMove {
+public final class Headbutt extends PhysicalMove {
     private static final double POWER_HEADBUTT = 70;
     private static final double ACCURACY_HEADBUTT = 100;
 

@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Aerial Ace deals damage and ignores changes to the Accuracy and Evasion stats
  */
 
-public class AerialAce extends PhysicalMove {
+public final class AerialAce extends PhysicalMove {
     private static final double POWER_AERIAL_ACE = 60;
     private static final double ACCURACY_AERIAL_ACE = 100;
 

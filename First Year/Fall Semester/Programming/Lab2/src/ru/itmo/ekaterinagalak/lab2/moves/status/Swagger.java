@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Swagger confuses the target and raises its Attack by two stages.
  */
 
-public class Swagger extends StatusMove {
+public final class Swagger extends StatusMove {
     private static final double POWER_SWAGGER = 0;
     private static final double ACCURACY_SWAGGER = 85;
 

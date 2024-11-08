@@ -2,7 +2,7 @@ package ru.itmo.ekaterinagalak.lab2.pokemons;
 
 import ru.itmo.ekaterinagalak.lab2.moves.status.Rest;
 
-public class Vileplume extends Gloom { 
+public final class Vileplume extends Gloom { 
     private static final double BASE_STATS_HP = 60;
     private static final double BASE_STATS_ATTACK = 65;
     private static final double BASE_STATS_DEFENSE = 70;

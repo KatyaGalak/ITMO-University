@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Work Up raises the user's Attack and Special Attack by one stage each.
  */
 
-public class WorkUp extends StatusMove {
+public final class WorkUp extends StatusMove {
     private static final double POWER_WORK_UP = 0;
     private static final double ACCURACY_WORK_UP = 100;
 

@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.*;
  * Bulldoze deals damage and lowers the target's Speed by one stage.
  */
 
-public class Bulldoze extends PhysicalMove {
+public final class Bulldoze extends PhysicalMove {
     private static final double POWER_BULLDOZE = 60;
     private static final double ACCURACY_BULLDOZE = 100;
 
