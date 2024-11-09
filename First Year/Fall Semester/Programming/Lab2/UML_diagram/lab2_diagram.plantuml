@@ -23,10 +23,10 @@ class Eevee {
     setMove()
 }
 
-class Graceon {
+class Glaceon {
     name: String
     level: int
-    +Graceon()
+    +Glaceon()
     setStats()
     setType()
     addMove()
@@ -62,7 +62,7 @@ class Vileplume {
 Tropius --|> Pokemon
 
 Eevee --|> Pokemon
-Graceon --|> Eevee
+Glaceon --|> Eevee
 
 Oddish --|> Pokemon
 Gloom --|> Oddish
@@ -203,5 +203,31 @@ Move : From ru.ifmo.se.pokemon
 
 StatusMove --|> Move
 DamageMove --|> Move
+
+Tropius o-- Headbutt
+Tropius o-- Bulldoze
+Tropius o-- AerialAce
+Tropius o-- RazorLeaf
+
+Eevee o-- TailWhip
+Eevee o-- Facade
+Eevee o-- WorkUp
+
+Glaceon o-- TailWhip
+Glaceon o-- Facade
+Glaceon o-- WorkUp
+Glaceon o-- FrostBreath
+
+Oddish o-- Swagger
+Oddish o-- Facade
+
+Gloom o-- Swagger
+Gloom o-- Facade
+Gloom o-- Acid
+
+Vileplume o-- Swagger
+Vileplume o-- Facade
+Vileplume o-- Acid
+Vileplume o-- Rest
 
 @enduml
