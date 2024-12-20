@@ -1,0 +1,41 @@
+{
+    "shorties" : [
+        {
+            "activityType" : "Gamblers",
+            "timeSpent" : "day to day",
+            "location" : {
+                "nameLocation" : "table",
+                "type" : "bar"
+            },
+            "typesActivity" : [
+                {
+                    "name" : "Дурак",
+                    "numParticipants" : 4
+                },
+                {
+                    "name" : "девятка"
+                }
+            ]
+            
+        }, {
+            "activityType" : "MovieLovers",
+            "timeSpent" : "day to day",
+            "location" : {
+                "nameLocation" : "table",
+                "name" : "Листики"
+            },
+            "levelDecreaseIntelligenceLevel" : -2,
+            "typesActivity" : [
+                {
+                    "name" : "Тучка",
+                    "numParticipants" : 4
+                },
+                {
+                    "name" : "Ливень"
+                }
+            ]
+            
+        }
+    ],
+    "filmHero" : ["бегать", "прыгать", "палить из пистолета"]
+}
