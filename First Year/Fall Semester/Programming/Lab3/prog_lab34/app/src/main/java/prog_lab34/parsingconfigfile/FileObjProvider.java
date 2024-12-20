@@ -254,7 +254,7 @@ public class FileObjProvider implements ObjProvider {
                     continue;
                 }
 
-                if (activity.location.nameLocation != null) {
+                if (activity.location != null) {
                     parsingShorty.setLocation(parsingLocation(activity.location.nameLocation, 
                                                                 activity.location.name, activity.location.type));
                 }
@@ -267,48 +267,50 @@ public class FileObjProvider implements ObjProvider {
                     parsingShorty.setTimeSpent(parsingTimeSpent(activity.timeSpent));
                 }
 
-
-                for (ParsingTypeActivity type : activity.typesActivity) {
-                    if (activity.activityType.equals("Gamblers")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new CardGame(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new CardGame(type.name));
-                        }
-                    } else if (activity.activityType.equals("Carouselers")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new Carousel(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new Carousel(type.name));
-                        }
-                    } else if (activity.activityType.equals("DominoLovers")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new DominoGame(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new DominoGame(type.name));
-                        }
-                    } else if (activity.activityType.equals("LeapfrogPlayers")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new LeapfrogGame(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new LeapfrogGame(type.name));
-                        }
-                    } else if (activity.activityType.equals("MovieLovers")) {
-                        parsingShorty.addTypesActivity(new Movie(type.name));
-                    } else if (activity.activityType.equals("Wheelers")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new Wheel(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new Wheel(type.name));
-                        }
-                    } else if (activity.activityType.equals("Sharashniki")) {
-                        if (type.numParticipants != null) {
-                            parsingShorty.addTypesActivity(new Sharashka(type.name, type.numParticipants));
-                        } else {
-                            parsingShorty.addTypesActivity(new Sharashka(type.name));
+                if (activity.typesActivity != null) {
+                    for (ParsingTypeActivity type : activity.typesActivity) {
+                        if (activity.activityType.equals("Gamblers")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new CardGame(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new CardGame(type.name));
+                            }
+                        } else if (activity.activityType.equals("Carouselers")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new Carousel(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new Carousel(type.name));
+                            }
+                        } else if (activity.activityType.equals("DominoLovers")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new DominoGame(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new DominoGame(type.name));
+                            }
+                        } else if (activity.activityType.equals("LeapfrogPlayers")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new LeapfrogGame(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new LeapfrogGame(type.name));
+                            }
+                        } else if (activity.activityType.equals("MovieLovers")) {
+                            parsingShorty.addTypesActivity(new Movie(type.name));
+                        } else if (activity.activityType.equals("Wheelers")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new Wheel(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new Wheel(type.name));
+                            }
+                        } else if (activity.activityType.equals("Sharashniki")) {
+                            if (type.numParticipants != null) {
+                                parsingShorty.addTypesActivity(new Sharashka(type.name, type.numParticipants));
+                            } else {
+                                parsingShorty.addTypesActivity(new Sharashka(type.name));
+                            }
                         }
                     }
                 }
+                
             }
 
             for (String action : root.filmHero) {

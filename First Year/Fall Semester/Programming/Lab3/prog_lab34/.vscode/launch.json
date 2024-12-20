@@ -6,7 +6,7 @@
             "request": "launch",
             "mainClass": "prog_lab34.App",
             "projectName": "app",
-            "args": ["--provider=simple", "-i=app/src/main/java/prog_lab34/data/config.json"] // or simple
+            "args": ["--provider=config", "-i=app/src/main/java/prog_lab34/data/config.json"] // or simple
         },
         {
             "type": "cmake",

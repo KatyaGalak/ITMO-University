@@ -34,6 +34,12 @@ public class MovieLovers extends Shorty implements AbleWatchFilmHero {
     public String watchFilmHero(FilmHero filmHero) {
         StringBuilder ans = new StringBuilder();
 
+        if (levelDecreaseIntelligenceLevel < 0) {
+            ans.append("Это, однако, ошибка, так как содержание фильмов было слишком бессмысленным, чтобы давать какую-нибудь пищу для ума. ");
+        } else {
+            ans.append("И, действительно, фильмы помогали киношникам получать бесценную пищу для ума. ");
+        }
+
         ans.append("Киношники, глядя как");
 
         ans.append(filmHero.performAllActions(levelDecreaseIntelligenceLevel));
@@ -70,9 +76,9 @@ public class MovieLovers extends Shorty implements AbleWatchFilmHero {
             ans.append(" " + location.getLocationInfo());
         } else {
             ans.append(" сидели в кинотеатре");
+            ans.append(" и");
         }
 
-        ans.append(" и");
 
         ans.append(" смотрели различные фильмы");
 

@@ -1,41 +1,55 @@
 {
     "shorties" : [
         {
+            "activityType" : "Sharashniki",
+            "levelDecreaseIntelligenceLevel" : -3
+        },
+        {
+            "activityType" : "Carouselers",
+            "timeSpent" : "all day long"
+        },
+        {
+            "activityType" : "Wheelers"
+        },
+        {
+            "activityType" : "LeapfrogPlayers"
+        },
+        {
+            "activityType" : "DominoLovers",
+            "timeSpent" : "day to day",
+            "location" : {
+                "nameLocation" : "table"
+            },
+            "typesActivity" : [
+                {
+                    "name" : "козёл"
+                }
+            ],
+            "levelDecreaseIntelligenceLevel" : -3
+            
+        },
+        {
             "activityType" : "Gamblers",
             "timeSpent" : "day to day",
             "location" : {
-                "nameLocation" : "table",
-                "type" : "bar"
+                "nameLocation" : "grass"
             },
             "typesActivity" : [
                 {
-                    "name" : "Дурак",
+                    "name" : "подкидной дурак",
                     "numParticipants" : 4
-                },
-                {
-                    "name" : "девятка"
                 }
             ]
             
-        }, {
+        }, 
+        {
             "activityType" : "MovieLovers",
-            "timeSpent" : "day to day",
+            "timeSpent" : "from morning to evening",
             "location" : {
-                "nameLocation" : "table",
-                "name" : "Листики"
+                "nameLocation" : "cinema"
             },
-            "levelDecreaseIntelligenceLevel" : -2,
-            "typesActivity" : [
-                {
-                    "name" : "Тучка",
-                    "numParticipants" : 4
-                },
-                {
-                    "name" : "Ливень"
-                }
-            ]
-            
+            "levelDecreaseIntelligenceLevel" : -2
         }
     ],
-    "filmHero" : ["бегать", "прыгать", "палить из пистолета"]
+    "filmHero" : ["бегать", "прыгать", "палить из пистолета", "падать", "кувыркаться"]
 }

@@ -77,10 +77,10 @@ public class LeapfrogPlayers extends Shorty {
             ans.append(" " + location.getLocationInfo());
         }
 
-        ans.append(" играли в чехарду");
+        ans.append(" не признавали ничего, кроме игры в чехарду");
 
         if (!typesLeapfrog.isEmpty()) {
-            ans.append(", чаще всего в");
+            ans.append(", а чаще всего играли в");
             for (LeapfrogGame leapfrog : typesLeapfrog) {
                 ans.append(" " + leapfrog.name());
                 if (leapfrog.numParticipants() > 1) {
