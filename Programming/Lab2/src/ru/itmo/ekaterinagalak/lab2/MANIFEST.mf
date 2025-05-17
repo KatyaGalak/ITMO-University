@@ -1,0 +1,2 @@
+Main-Class: ru/itmo/ekaterinagalak/lab2/Main
+Class-Path: libs/Pokemon.jar
