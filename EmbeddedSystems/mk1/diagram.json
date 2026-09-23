@@ -38,6 +38,13 @@
       "top": -453.2,
       "left": 163.5,
       "attrs": { "columns": "4" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "myLabel",
+      "top": 300,
+      "left": 10,
+      "attrs": { "text": "OP1 - плюс, OP2 - минус, OP3 - умножить, OP4 - делить" }
     }
   ],
   "connections": [

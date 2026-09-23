@@ -25,6 +25,9 @@ typedef enum {
 #define MASK_E     0x79
 #define MASK_R     0x50
 
+#define MASK_O     0x3F
+#define MASK_P     0x73
+
 static CalcState currentState = STATE_WAIT_A;
 static uint8_t selectedOpIndex = 0;
 static int16_t operandA = 0;
@@ -142,6 +145,13 @@ static void renderFloat2Dec(uint16_t fixedPoint) {
   renderBuffer(digits);
 }
 
+static void renderOpIndex(uint8_t opIndex) {
+  // opIndex: 0=+, 1=-, 2=*, 3=/
+  uint8_t buf[4] = { MASK_BLANK, MASK_O, MASK_P, DIGIT_MAP[opIndex + 1] };
+
+  renderBuffer(buf);
+}
+
 static void calculateResult(void) {
   currentState = STATE_SHOW_RESULT;
 
@@ -151,7 +161,7 @@ static void calculateResult(void) {
     if (operandB == 0) {
       renderError();
       printf("[Error]: Division by zero\n");
-      
+
       return;
     }
 
@@ -199,6 +209,8 @@ static void processKeyPress(char key) {
     }
 
     printf("Selected op: %c\n", MATH_OPS[selectedOpIndex]);
+
+    renderOpIndex(selectedOpIndex);
   } else if (key == '#' && currentState == STATE_WAIT_B) {
     calculateResult();
   }
